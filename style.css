@@ -10,18 +10,18 @@ body{
 header{
     margin: 0px;
     /* background-color: wheat; */
-    height: 20vh;
+    /* height: 70px; */
     min-width: max-content;
     display: flex;
     justify-content: space-between;
-    padding: 0px 150px;
+    padding: 20px 150px;
     background-color: rgb(60, 146, 118);
     color: white;
 }
-.top-icon{
+/* .top-icon{
     padding: 30px 0px;
     margin-right: 30px;
-}
+} */
 .top-icon i{
     transition: 0.3s;
     rotate: -15deg;
@@ -32,16 +32,16 @@ header{
     scale: 1.1;
 }
 
-header nav{
+/* header nav{
     padding: 20px 0px;
-}
+} */
 nav ul{
     display: flex;
     flex-direction: row;
     list-style: none;
 }
 nav ul li{
-    padding: 10px 20px;
+    padding: 0px 20px;
     font-size: 20px;
     /* text-decoration: none; */
     transition: 0.3s;
@@ -59,13 +59,13 @@ nav ul li:hover{
     transform: scale(1.07);
 }
 .icons{
-    padding: 20px 0px;
-    margin-right: 30px;
+    padding: 10px 2px;
+    margin: 0px 30px;
     
 }
 .icons i{
     padding: 10px;
-    margin: 15px 5px;
+    margin: 0px 5px;
     background-color: rgb(36, 87, 70);
     border-radius: 5px;
     transition: 0.3s;
@@ -428,8 +428,8 @@ nav ul li:hover{
     color: rgb(255, 196, 108);
 }
 .sec6-1 i:hover{
-    color: rgb(247, 148, 0);
-    scale: 1.5;
+    color: rgb(231, 153, 35);
+    scale: 1.1;
 }
 .sec6-2{
     display: flex;
@@ -492,20 +492,30 @@ footer{
     color: rgb(77, 75, 75);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     body {
-      background-color: lightblue;
+      /* background-color: lightblue; */
     }
     header{
-        display: flex;
-        justify-content: space-around;
-        /* margin: 0px; */
-        padding: 0px;
+        padding: 20px;
+        margin: 0px;
     }
     header nav{
         display: none;
+        padding: 0px;
+        margin: 0px;
+    }
+    .top-icon, .icons{
+        margin: 0px;
+    }
+    .sec{
+        padding: 0px;
+        margin: 0px;
     }
     h3{
+        padding: 0px;
+        margin: 0px;
         font-size: 30px !important;
     }
+
   }
