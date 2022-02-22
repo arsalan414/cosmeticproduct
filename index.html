@@ -7,6 +7,7 @@
     <title>Cream</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/23af9693ed.js" crossorigin="anonymous"></script>
+    <script src="app.js" defer></script>
 </head>
 <body>
     <!-- header starts here -------->
@@ -17,25 +18,37 @@
         </div>
         
         <nav>
-            <ul>
+            <ul class="displayed-nav">
                 <li><a href="#">Product</a></li>
                 <li><a href="#">Shop</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Blog</a></li>
             </ul>
+            
         </nav>
         <div class="icons">
             <i class="fa-solid fa-basket-shopping fa-1x"></i>
-            <i class="fa-solid fa-bars-staggered fa-1x"></i>
+            <i class="fa-solid fa-bars-staggered fa-1x" onclick="opennav()"></i>
+            <i class="fa-solid fa-xmark fa-1x ic-hide" onclick="opennav()"></i>
         </div>
     </header>
+   
+    
     <!-- header ends here ---------------->
 
 
     <!-- main content starts here --------->
     <main>
+        <section class="nav-hidden hidden hide">
+            <ul class="dropdown-nav">
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </section>
 
-    <!-- Section 1 -------->
+    <!-- Section 1 starts here ----------->
         <section class="sec sec-1">
             <div class="top-1">
                 <h3>Everyone is beautyful, we just make it clear!</h3>
@@ -54,6 +67,8 @@
                 <img class="top-img" src="./images/cosmetic-cream1.png" alt="cosmetic-cream">
             </div>
         </section>
+
+    <!-- section 2 starts here -------->
         <section class="sec sec-2">
             <div class="sec2-head cen">
                 <h1 class="top-heading">Our Popular Products</h1>
@@ -63,29 +78,34 @@
                 <div class="angle">
                     <i class="fa-solid fa-angle-left fa-2x"></i>
                 </div>
-                <div class="cards cen">
-                    <img src="./images/cosmetic-product.png" height="400px" width="100%" alt="">
-                    <h3>Body Cream</h3>
-                    <p>$11.50</p>
-                    <p><a href="#">Buy Now</a></p>
+                <div class="cards-container">
+                    <div class="cards cen">
+                        <img src="./images/cosmetic-product.png" height="400px" width="100%" alt="">
+                        <h3>Body Cream</h3>
+                        <p>$11.50</p>
+                        <p><a href="#">Buy Now</a></p>
+                    </div>
+                    <div class="cards cen">
+                        <img src="./images/cosmetic-product.png" height="400px" width="100%" alt="">
+                        <h3>Body Cream</h3>
+                        <p>$11.50</p>
+                        <p><a href="#">Buy Now</a></p>
+                    </div>
+                    <div class="cards cen">
+                        <img src="./images/cosmetic-product.png" height="400px" width="100%" alt="">
+                        <h3>Body Cream</h3>
+                        <p>$11.50</p>
+                        <p><a href="#">Buy Now</a></p>
+                    </div>
                 </div>
-                <div class="cards cen">
-                    <img src="./images/cosmetic-product.png" height="400px" width="100%" alt="">
-                    <h3>Body Cream</h3>
-                    <p>$11.50</p>
-                    <p><a href="#">Buy Now</a></p>
-                </div>
-                <div class="cards cen">
-                    <img src="./images/cosmetic-product.png" height="400px" width="100%" alt="">
-                    <h3>Body Cream</h3>
-                    <p>$11.50</p>
-                    <p><a href="#">Buy Now</a></p>
-                </div>
+                
                 <div class="angle">
                     <i class="fa-solid fa-angle-right fa-2x"></i>
                 </div>
             </div>
         </section>
+
+    <!-- section 3 starts here --------->
         <section class="sec sec-3">
             <div class="sect3-left">
                 <div class="sec3-d sec3-l-1">
@@ -147,6 +167,8 @@
                 </div>
             </div>
         </section>
+
+    <!-- section 4 starts here --------->
         <section class="sec sec-4">
             <div class="sec4-l">
                 <div class="sec4-d-l">
@@ -183,6 +205,7 @@
             </div>
         </section>
 
+    <!-- section 5 starts here --------->
         <section class="sec sec-5">
             <div class="sec5 sec-5-1">
                 <img src="./images/facewash.png" alt="">
@@ -250,7 +273,10 @@
             </div>
         </section>
     </main>
+    <!-- Main content ends here  ------>
     <hr>
+
+    <!-- Footer starts here  --------->
     <footer>
         Copyright © 2021 All rights reserved to M. Arsalan
     </footer>

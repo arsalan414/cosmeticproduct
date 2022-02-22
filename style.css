@@ -55,6 +55,7 @@ nav ul li a:hover{
 nav ul li:hover{
     transform: scale(1.07);
 }
+
 .icons{
     padding: 10px 2px;
     margin: 0px 30px;
@@ -72,6 +73,13 @@ nav ul li:hover{
     cursor: pointer;
     scale: 1.10;
 }
+.hide{
+    display: none;
+}
+.ic-hide{
+    display: none !important;
+}
+
 .sec{
     margin: 0px;
     /* min-width: fit-content; */
@@ -181,12 +189,15 @@ nav ul li:hover{
 
 .sec2-products{
     display: flex;
-    flex-direction: row;
-    /* flex-wrap: wrap; */
+}
+.cards-container{
+    display: flex;
+    width: 75vw;
 }
 .cards{
     margin: 20px 30px;
     height: 500px;
+    scale: 0.9;
     /* color: rgb(36, 87, 70); */
 }
 .cards img{
@@ -220,6 +231,7 @@ nav ul li:hover{
     cursor: pointer;
     padding: 0px 5px 5px 0px;
     color: rgb(36, 87, 70);
+    z-index: 1;
 }
 .angle:hover{
     /* color: rgb(36, 87, 70); */
@@ -231,6 +243,7 @@ nav ul li:hover{
 
 .sec-3{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     background-color: rgb(60, 146, 118);
     color: white;
@@ -239,11 +252,16 @@ nav ul li:hover{
     padding: 30px 150px 30px 150px;
 }
 .sec3-prod img{
-    transform: scaleX(1.2);
+    /* transform: scaleX(1.2); */
+    width: 120px;
+    height: 450px;
 }
 .sec3-d{
     display: flex;
-    margin: 0px 30px;
+    margin: 0px 0px;
+    padding: 0px;
+    width: 400px;
+    height: 160px;
 }
 .sec3-d i{
     margin: 30px 30px;
@@ -257,9 +275,13 @@ nav ul li:hover{
 }
 .sec3-d h3{
     font-family: sans-serif;
-    font-size: 24px;
-    /* line-height: 22px; */
+    font-size: calc(1vw + 2vh + 0.5vmin);
+    /* line-height: px; */
+    line-break: loose;
     margin: 30px 0px 0px 0px;
+}
+.sec3-d p{
+    margin: 10px 0px 0px;
 }
 .sec-4{
     display: flex;
@@ -273,7 +295,7 @@ nav ul li:hover{
 }
 .sec4-r{
     width: 400px;
-    padding-top: 50px;
+    /* padding-top: 50px; */
 }
 .sec4-d-l, .sec4-d-r-t{
     width: 350px;
@@ -429,7 +451,7 @@ nav ul li:hover{
     width: 400px;
     font-family: sans-serif;
     text-align: justify;
-    padding: 0px 30px;
+    padding: 30px 30px;
 }
 .sec6-1{
     text-align: justify;
@@ -446,6 +468,7 @@ nav ul li:hover{
     color: rgb(231, 153, 35);
     scale: 1.1;
 }
+
 .sec6-2{
     display: flex;
     justify-content: space-around;
@@ -467,18 +490,14 @@ nav ul li:hover{
     flex-direction: column;
 }
 .sec6-icons{
-    /* background-color: rgb(255, 196, 108); */
-    /* margin: 10 auto; */
     display: flex;
-    align-items: center;
-    /* justify-content: center; */
-    /* padding: 0px; */
 }
 .sec6-icons a{
     background-color: rgb(255, 196, 108);
     border-radius: 100px;
     height: 50px;
     padding: 0px;
+    margin: 10px;
 }
 .sec6-icons img{
     scale: 0.5;
@@ -495,20 +514,57 @@ nav ul li:hover{
     border-radius: 5px;
 }
 hr{
-    width: 85vw;
+    width: 90vw;
     color: rgb(184, 182, 182);
 }
 
 footer{
     text-align: center;
     font-size: 14px;
-    margin-top: 20px;
+    margin-top: 10px;
     padding: 10px 0px;
     color: rgb(77, 75, 75);
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1360px) {
+    .sec-5-3{
+        display: none;
+    }
+}
+
+  @media only screen and (max-width: 1250px) {
+    .sec3-prod{
+        display: none;
+    }
+    .sec4-l{
+        scale: 0.9;
+    }
+    .sec-4{
+        padding: 20px;
+        margin: 0px;
+    }
+    .sec-4{
+        justify-content: center;
+    }
+    .sec4-r{
+        width: 700px;
+        padding: 0px;
+        margin: 0px;
+    }
     
+    .sec5{
+        padding: 0px;
+        margin: 20px;
+    }
+    .sec6-2{
+        justify-content: space-between;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    body{
+        /* overflow-x: hidden; */
+    }
     header{
         padding: 20px;
         margin: 0px;
@@ -518,23 +574,66 @@ footer{
         padding: 0px;
         margin: 0px;
     }
-    img{
+  
+    .hidden{
+        display: none !important;
+    }
+
+    .hide{
+        display: block;
+    }
+    /* dropdown navbar */
+   
+    .nav-hidden{
+        background-color: rgb(36, 87, 70);
+        position: absolute;
+        /* float: right; */
+        right: 0;
+        top: 0;
+        margin: 70px 25px !important;
+        z-index: 1;
+        border-radius: 5px 0px 0px 5px;
+        width: 70vw;
+        height: 50vh;
+    }
+    .nav-hidden ul li{
+        list-style: none;
+        padding: 20px 0px 15px 0px;
+        border-bottom: 0.5px solid white;
+    }
+    .nav-hidden ul li a{
+        font-size: 24px;
+        text-decoration: none;
+        color: rgb(250, 250, 250);
+        font-weight: bold;
+        /* margin: 0px; */
+    }
+
+
+    .sec-1 img{
         scale: 0.7;
     }
     .top-icon, .icons{
         margin: 0px;
         /* padding: 20px; */
     }
-    .sec{
+    .sec-1, .sec-2, .sec-3, .sec-4{
         padding: 10px;
         margin: 0px;
+        justify-content: center;
     }
 
-    h3{
+    .top-1 h3{
         padding: 0px;
         margin: 0px;
         font-size: calc(5vw + 2vh + 0.2vmin) !important;
-        /* font-size: 7.5vw !important; */
+    }
+
+    .sec4-l{
+        scale: 0.7;
+    }
+    .sec4-r{
+        width: 600px;
     }
 
   }
