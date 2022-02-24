@@ -241,7 +241,6 @@ nav ul li:hover{
     z-index: 1;
 }
 .angle:hover{
-    /* color: rgb(36, 87, 70); */
     transform: scale(1.1);
     background-color: rgba(60, 146, 117, 0.856);
     border-radius: 25px;
@@ -254,24 +253,23 @@ nav ul li:hover{
     justify-content: space-between;
     background-color: rgb(60, 146, 118);
     color: white;
+    width: 100%;
     min-height: 70vh;
-    /* padding-top: 30px; */
     padding: 30px 150px 30px 150px;
 }
 .sec3-prod img{
-    /* transform: scaleX(1.2); */
     width: 120px;
     height: 450px;
 }
 .sec3-d{
     display: flex;
-    margin: 0px 0px;
+    margin: 0px;
     padding: 0px;
     width: 400px;
     height: 160px;
 }
 .sec3-d i{
-    margin: 30px 30px;
+    margin: 30px 15px;
     padding: 20px 0px 0px 0px;
     width: 80px;
     text-align: center;
@@ -283,7 +281,6 @@ nav ul li:hover{
 .sec3-d h3{
     font-family: sans-serif;
     font-size: calc(1vw + 2vh + 0.5vmin);
-    /* line-height: px; */
     line-break: loose;
     margin: 30px 0px 0px 0px;
 }
@@ -296,7 +293,6 @@ nav ul li:hover{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    /* padding: 100px 0px ; */
 }
 .sec4-l{
     display: flex;
@@ -304,7 +300,6 @@ nav ul li:hover{
 }
 .sec4-r{
     width: 400px;
-    /* padding-top: 50px; */
 }
 .sec4-d-l, .sec4-d-r-t{
     width: 300px;
@@ -351,18 +346,14 @@ nav ul li:hover{
 
 .sec4-d-col{
     background-color: rgb(173, 173, 44);
-    /*width: 65px;
-    height: 40px; */
     width: 40px;
     height: 40px;
-    /* scale: 1.15; */
     border-radius: 50%;
     border: 1.5px solid white;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* text-align: center; */
 }
 .sec4-d-col img{
     width: 100%;
@@ -432,7 +423,6 @@ nav ul li:hover{
 .sec5 button{
     width: 28%;
     background-color: rgb(36, 87, 70);
-    /* height: 30px; */
     color: white;
     font-weight: 700;
     font-size: 14px;
@@ -443,14 +433,12 @@ nav ul li:hover{
     color: blanchedalmond;
 }
 .sec5 button .fa-solid{
-    /* padding-bottom: 20px !important; */
     scale: 0.9;
     margin: 0px;
     padding: 3px 0px 0px 3px;
 }
 .sec5 img{
     transform: rotate(-20deg);
-    /* background-color: aqua; */
     max-height: fit-content ;
 }
 .newsletter-form{
@@ -630,7 +618,6 @@ footer{
         text-decoration: none;
         color: rgb(250, 250, 250);
         font-weight: bold;
-        /* margin: 0px; */
     }
 
 
@@ -639,7 +626,6 @@ footer{
     }
     .top-icon, .icons{
         margin: 0px;
-        /* padding: 20px; */
     }
     .sec-1, .sec-2, .sec-3, .sec-4{
         padding: 10px;
@@ -652,61 +638,54 @@ footer{
         margin: 0px;
         font-size: calc(5vw + 2vh + 0.2vmin) !important;
     }
-    /* .sec4-r{
-        width: 600px;
-    } */
 
+    /* section 4 */
 
+    .sec4-l{
+        display: flex;
+        width: 430px;
+    }
+    .sec4-r{
+        width: 400px;
+    }
 
-/* section 4 */
+    .sec4-d-l, .sec4-d-r-t{
+        width: 200px;
+        height: 300px;
+        text-align: center;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sec4-d-l{
+        background-color: blanchedalmond;
+    }
+    .sec4-d-l img{
+        width: 60%;
+        height: 80%;
+    }
+    .sec4-d-r-t{
+        background-color: rgb(60, 146, 118);
+        position: relative;
+        right: 35px;
+        bottom:30px;
+    }
+    .sec4-d-r-t img{
+        transform: rotate(-20deg);
+        width: 60%;
+        height: 80%;
 
-.sec4-l{
-    display: flex;
-    width: 430px;
-}
-.sec4-r{
-    width: 400px;
-    /* padding-top: 50px; */
-}
-
-.sec4-d-l, .sec4-d-r-t{
-    width: 200px;
-    height: 300px;
-    text-align: center;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.sec4-d-l{
-    background-color: blanchedalmond;
-}
-.sec4-d-l img{
-    width: 60%;
-    height: 80%;
-}
-.sec4-d-r-t{
-    background-color: rgb(60, 146, 118);
-    position: relative;
-    right: 35px;
-    bottom:30px;
-}
-.sec4-d-r-t img{
-    transform: rotate(-20deg);
-    width: 60%;
-    height: 80%;
-
-}
-.sec4-d-r-b{
-    background-color: white;
-    box-shadow: 4px 4px #9c9c9c86;
-    width: 170px;
-    height: 55px;
-    position: relative;
-    /* right: 10px; */
-    bottom: 60px;
-    border-radius: 5px;
-    display: flex;
-}
+    }
+    .sec4-d-r-b{
+        background-color: white;
+        box-shadow: 4px 4px #9c9c9c86;
+        width: 170px;
+        height: 55px;
+        position: relative;
+        bottom: 60px;
+        border-radius: 5px;
+        display: flex;
+    }
 
 }
