@@ -293,63 +293,69 @@ nav ul li:hover{
 .sec-4{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     min-height: 100vh;
-    padding: 100px 100px ;
+    /* padding: 100px 0px ; */
 }
 .sec4-l{
     display: flex;
-    width: 700px;
+    width: 600px;
 }
 .sec4-r{
     width: 400px;
     /* padding-top: 50px; */
 }
 .sec4-d-l, .sec4-d-r-t{
-    width: 350px;
-    height: 420px;
+    width: 300px;
+    height: 400px;
     text-align: center;
     border-radius: 5px;
-    /* margin: 50% auto; */
-    /* padding: 50% auto; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .sec4-d-l{
     background-color: blanchedalmond;
-    padding: 40px 0px;
+}
+.sec4-d-l img{
+    width: 60%;
+    height: 80%;
 }
 .sec4-d-r-t{
     background-color: rgb(60, 146, 118);
     position: relative;
     right: 80px;
-    bottom:40px;
+    bottom:50px;
 }
 .sec4-d-r-t img{
-    transform: rotate(-20deg) scale(0.9);
-    margin: 20px 0px;
-    
+    transform: rotate(-20deg);
+    width: 60%;
+    height: 80%;
+
 }
 .sec4-d-r-b{
     background-color: white;
     box-shadow: 4px 4px #9c9c9c86;
-    width: 275px;
-    height: 80px;
+    width: 225px;
+    height: 70px;
     position: relative;
     right: 5px;
-    bottom: 80px;
+    bottom: 70px;
     border-radius: 5px;
     display: flex;
-    padding: 0px 0px 0px 30px;
-    /* text-align: center; */
     justify-content: center;
-    /* align-content: center; */
     align-items: center;
+    padding-left: 30px;
 }
 
 .sec4-d-col{
     background-color: rgb(173, 173, 44);
     width: 50px;
-    height: 50px;
+    height: 40px;
+    scale: 1.15;
     border-radius: 30px;
-    border: 2px solid white;
+    border: 1.5px solid white;
     overflow: hidden;
 }
 .sec4-d-col img{
@@ -382,7 +388,12 @@ nav ul li:hover{
     right: 32px;
     text-align: center;
     color: white;
-    font-weight: 700;
+    font-weight: 600;
+
+}
+.sec4-d-col-5 p{
+    /* text-align: center; */
+    font-size: 13px;
 }
 
 .sec-5{
@@ -544,7 +555,9 @@ footer{
         display: none;
     }
     .sec4-l{
-        scale: 0.9;
+        /* scale: 0.9; */
+        /* width: 700px; */
+        /* margin-left:20px; */
     }
     .sec-4{
         padding: 20px;
@@ -638,6 +651,7 @@ footer{
 
     .sec4-l{
         scale: 0.6;
+        /* transform: scale(0.7) !important; */
     }
     .sec4-r{
         width: 600px;
